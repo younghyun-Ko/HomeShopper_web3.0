@@ -25,7 +25,6 @@ const navigationItems: NavigationItem[] = [
   { id: 1, title: "AI 분석", href: "/ai-analysis" },
   { id: 2, title: "상담 신청", href: "/consultation" },
   { id: 3, title: "매물 보기", href: "/listings" },
-  { id: 4, title: "임대인 혜택", href: "/#for-landlords" },
   { id: 5, title: "중개사 제휴", href: "/agent-partnership" },
   { id: 6, title: "마이 페이지", href: MY_PAGE_ROOT_PATH },
 ];
