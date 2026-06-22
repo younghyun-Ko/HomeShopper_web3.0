@@ -78,7 +78,7 @@ function BuyerForm() {
 
   const isSubmitEnabled = name.trim().length > 0 && phoneNumber.length === 13 && hasConsent;
 
-  const handleSubmit = (event: SubmitEvent) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     if (!isSubmitEnabled) {
@@ -361,7 +361,7 @@ function SellerForm() {
     setUploadedFiles((prev) => ({ ...prev, [key]: null }));
   };
 
-  const handleSubmit = (event: SubmitEvent) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!isSubmitEnabled) return;
     router.push("/consultation/submitted");
